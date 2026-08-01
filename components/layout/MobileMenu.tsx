@@ -16,16 +16,18 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ links, open, onClose }: MobileMenuProps) {
   return (
-    <nav className={`mobile-nav ${open ? "open" : ""}`}>
+    <nav className={`mobile-nav ${open ? "open" : ""}`} aria-label="Menu de navegação">
       <button className="mobile-nav-close" onClick={onClose} aria-label="Fechar menu">
         ✕
       </button>
 
-      {links.map((link) => (
-        <Link key={link.href} href={link.href} className="mobile-link" onClick={onClose}>
-          {link.label}
-        </Link>
-      ))}
+      <div className="mobile-nav-links">
+        {links.map((link) => (
+          <Link key={link.href} href={link.href} className="mobile-link" onClick={onClose}>
+            {link.label}
+          </Link>
+        ))}
+      </div>
 
       <Button href="#contato" variant="primary" className="mobile-cta" onClick={onClose}>
         Agendar avaliação

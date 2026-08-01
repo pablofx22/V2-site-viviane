@@ -15,52 +15,29 @@ export default function Hero() {
       <div className="hero-bg-texture"></div>
 
       <div className="hero-photo-container">
-
-          <Image
-            src="/images/hero/dra-viviane-hero.jpeg"
-            alt="Dra. Viviane Seguro, Biomédica Esteta"
-            fill
-            priority
-            style={{ objectFit: "cover" }}
-          />
-        
-        <div className="hero-photo-placeholder">
-          <div className="photo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" strokeWidth="1.2">
-              <circle cx="12" cy="8" r="4" />
-              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-            </svg>
-          </div>
-          <p>Foto da Dra. Viviane</p>
-          <p style={{ fontSize: "0.65rem", color: "rgba(201,169,110,0.4)" }}>
-          </p>
-        </div>
+        <Image
+          src="/images/hero/dra-viviane-hero.jpeg"
+          alt="Dra. Viviane Seguro, Biomédica Esteta"
+          fill
+          priority
+          style={{ objectFit: "cover" }}
+        />
       </div>
 
       <div className="container">
         <div className="hero-content">
           <div className="section-label" style={{ marginBottom: "var(--s6)" }}>
             <span className="t-label hero-tagline">
-            <span className="hero-tagline-inner">
-              <Image
-                src="/images/logo/logo-mini.png"
-                alt="Logo"
-                width={16}
-                height={16}
-              />  
-              Biomedicina Estética · Porto Alegre
-            </span>
+            
           </span>
           </div>
 
           <h1 className="t-display hero-headline">
-            Beleza que
+            Beleza
             <br />
-            <em>transforma.</em>
+            que transforma.
             <br />
-            Cuidado que
-            <br />
-            acolhe.
+            Cuidado que acolhe.
           </h1>
 
           <p className="t-body-lg hero-subtitle">
@@ -68,6 +45,21 @@ export default function Hero() {
             Biomédica Esteta com formação técnica avançada e atenção
             personalizada a cada paciente.
           </p>
+
+          <div className="hero-info-block">
+            <div className="hero-address">
+              <p>Rua Dr. Florêncio Ygartua, 391 - Sl 302 - Moinhos de Vento, Porto Alegre - RS</p>
+            </div>
+
+            <div className="hero-social-proof">
+              <div className="hero-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p className="hero-proof-text">
+                <strong>5.0</strong> no Google · Avaliações verificadas de pacientes reais
+              </p>
+            </div>
+          </div>
 
           <div className="hero-actions">
             <Button href={whatsappLink} variant="primary" target="_blank" rel="noopener noreferrer">
@@ -83,14 +75,6 @@ export default function Hero() {
             </Button>
           </div>
 
-          <div className="hero-social-proof">
-            <div className="hero-stars">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <p className="hero-proof-text">
-              <strong>5.0</strong> no Google · Avaliações verificadas de pacientes reais
-            </p>
-          </div>
         </div>
       </div>
 

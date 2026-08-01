@@ -2,15 +2,12 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Button from "@/components/ui/Button";
+import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 
-const NAV_LINKS = [
-  { label: "Sobre", href: "#sobre" },
-  { label: "Procedimentos", href: "#procedimentos" },
-  { label: "Resultados", href: "#resultados" },
-  { label: "Workshops", href: "#autoridade" },
-  { label: "Avaliações", href: "#avaliacoes" },
+const MENU_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "Procedimentos", href: "/procedimentos" },
 ];
 
 export default function Header() {
@@ -28,47 +25,37 @@ export default function Header() {
       <header id="header" className={scrolled ? "scrolled" : ""}>
         <div className="container">
           <div className="header-inner">
-            <Link href="#" className="header-logo">
-              <span className="header-logo-name">Dra. Viviane Seguro</span>
-              <span className="header-logo-sub">
-                Biomédica Esteta · Porto Alegre
-              </span>
+            <Link href="/" className="header-logo">
+              <Image
+                src="/images/logo/logo-mini.png"
+                alt="Logo Dra. Viviane Seguro"
+                width={58}
+                height={58}
+                className="header-logo-img"
+                priority
+              />
+              <div className="header-logo-copy">
+                <span className="header-logo-title">Biomédica Esteta</span>
+                <span className="header-logo-subtitle">Porto Alegre</span>
+              </div>
             </Link>
 
-            <nav>
-              <ul className="header-nav">
-                {NAV_LINKS.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href}>{link.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <div className="header-cta">
-              <Button
-                href="#contato"
-                variant="outline"
-                className="header-cta-btn"
-              >
-                Agendar avaliação
-              </Button>
-              <button
-                className="menu-toggle"
-                aria-label="Abrir menu"
-                onClick={() => setMenuOpen(true)}
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
+            <button
+              className="menu-toggle"
+              aria-label="Abrir menu"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen((value) => !value)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
       </header>
 
       <MobileMenu
-        links={NAV_LINKS}
+        links={MENU_LINKS}
         open={menuOpen}
         onClose={() => setMenuOpen(false)}
       />
