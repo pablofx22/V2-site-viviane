@@ -1,9 +1,10 @@
 ﻿import { Metadata } from "next";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFloat from "@/components/ui/whatsAppFloat";
-import { procedimentosAncora } from "@/data/procedimentos";
+import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import ProcedimentosHero from "@/components/procedimentos/ProcedimentosHero";
 import ProcedimentosGrid from "@/components/procedimentos/ProcedimentosGrid";
+import ProcedimentosPortfolioGrid from "@/components/procedimentos/ProcedimentosPortfolioGrid";
+import { procedimentosAncora } from "@/data/procedimentos";
 
 export const metadata: Metadata = {
   title: "Procedimentos Estéticos | Dra. Viviane Seguro - Biomédica Esteta",
@@ -26,50 +27,50 @@ export default function ProcedimentosPage() {
       <main>
         <ProcedimentosHero />
 
-        <section id="procedimentos-grid" className="py-16 md:py-24 bg-cream">
+        {/* Seção de portfólio completo (nova) */}
+        <section className="pfg-section">
           <div className="container">
-            <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-              <span className="inline-flex items-center gap-3 text-gold text-xs font-medium tracking-[0.18em] uppercase mb-4">
-                <span className="h-px w-12 bg-gold inline-block"></span>
-                Procedimentos em destaque
-                <span className="h-px w-12 bg-gold inline-block"></span>
+            <div className="pfg-section-header">
+              <span className="proc-page-section-label">
+                <span className="proc-page-section-label-line"></span>
+                Portfólio Completo
+                <span className="proc-page-section-label-line"></span>
               </span>
-              <h2 className="t-h2 font-light text-text-primary">
-                Tratamentos com resultado natural e cuidado premium.
+              <h2 className="t-h2" style={{ color: "var(--text-primary)", fontWeight: 300, textAlign: "center" }}>
+                Todos os procedimentos disponíveis
               </h2>
-              <p className="t-body text-text-secondary mt-4">
-                Cada atendimento é personalizado para respeitar a sua anatomia, o seu tempo e o seu desejo de harmonia.
+              <p className="t-body" style={{ color: "var(--text-secondary)", textAlign: "center", maxWidth: "560px", margin: "var(--s4) auto 0" }}>
+                Cada tratamento é pensado para um objetivo específico. Converse com a Dra. Viviane para descobrir o ideal para você.
               </p>
             </div>
-
-            <ProcedimentosGrid procedimentos={procedimentosAncora} />
+            <ProcedimentosPortfolioGrid />
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-black-deep text-center">
-          <div className="container max-w-3xl mx-auto">
-            <span className="inline-block text-gold text-sm font-medium tracking-[0.18em] uppercase mb-4">
-              Pronta para transformar?
-            </span>
-            <h2 className="t-h2 font-light text-white-warm">
-              Agende sua <span className="text-gold-light italic">avaliação</span>
+        {/* CTA final */}
+        <section className="proc-page-cta">
+          <div className="container" style={{ maxWidth: 768, margin: "0 auto" }}>
+            <span className="proc-page-cta-label">Pronta para transformar?</span>
+            <h2 className="proc-page-cta-title">
+              Agende sua{" "}
+              <span style={{ color: "var(--gold-light)", fontStyle: "italic" }}>
+                Consulta
+              </span>
             </h2>
-            <p className="t-body text-white-warm/70 mt-4">
-              Converse agora com a Dra. Viviane Seguro e descubra qual procedimento é ideal para o seu rosto.
+            <p className="proc-page-cta-subtitle">
+              Converse agora com a Dra. Viviane Seguro e descubra qual
+              procedimento é ideal para o seu rosto.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="proc-page-cta-actions">
               <a
                 href="https://wa.me/5551999765243?text=Olá%2C%20Dra.%20Viviane!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avaliação"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-wider"
+                className="btn btn-primary"
               >
-                Agendar avaliação
+                Agendar Consulta
               </a>
-              <a
-                href="#procedimentos-grid"
-                className="btn btn-outline rounded-full px-8 py-3.5 text-sm font-medium uppercase tracking-wider"
-              >
+              <a href="#procedimentos-grid" className="btn btn-outline">
                 Ver procedimentos
               </a>
             </div>

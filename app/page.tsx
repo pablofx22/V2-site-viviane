@@ -1,13 +1,13 @@
 import Hero from "@/components/sections/Hero";
 import Sobre from "@/components/sections/Sobre";
 import Procedimentos from "@/components/sections/Procedimentos";
-import Resultados from "@/components/sections/Resultados";
+import Espaco from "@/components/sections/Espaco";
 import Autoridade from "@/components/sections/Autoridade";
 import Avaliacoes from "@/components/sections/Avaliacoes";
 import FAQ from "@/components/sections/FAQ";
 import Contato from "@/components/sections/Contato";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFloat from "@/components/ui/whatsAppFloat";
+import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <Sobre />
       <Procedimentos />
-      <Resultados />
+      <Espaco />
       <Autoridade />
       <Avaliacoes />
       <FAQ />

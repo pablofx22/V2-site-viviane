@@ -33,11 +33,9 @@ export default function Hero() {
           </div>
 
           <h1 className="t-display hero-headline">
-            Beleza
-            <br />
-            que transforma.
-            <br />
-            Cuidado que acolhe.
+            <span className="hero-line">Beleza</span>
+            <span className="hero-line">que transforma.</span>
+            <span className="hero-line"><em>Cuidado</em> que acolhe.</span>
           </h1>
 
           <p className="t-body-lg hero-subtitle">

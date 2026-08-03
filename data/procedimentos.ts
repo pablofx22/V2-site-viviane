@@ -48,34 +48,32 @@ export interface PortfolioCategoria {
 
 export const portfolioCategorias: PortfolioCategoria[] = [
   {
-    titulo: "Renovação da Pele",
+    titulo: "Renovacao da Pele",
     itens: [
       "Limpeza de pele profissional",
-      "SkinBoosters",
-      "Peelings químicos (glicólico, salicílico, TCA e mais)",
-      "Peeling físico de Diamante",
+      "Peelings quimicos (glicólico, salicílico, TCA e mais)",
+      "Peeling fisico de Diamante",
       "Microagulhamento com Drug Delivery",
       "LEDterapia",
       "Consultoria de Skincare",
     ],
   },
   {
-    titulo: "Tecnologia e Inovação",
+    titulo: "Tecnologia e Inovacao",
     itens: [
       "Luz Intensa Pulsada (IPL)",
-      "Regeneração tecidual com Peptídeos e Exossomos",
-      "Prescrições Biomédicas",
+      "SkinBoosters",
+      "Regeneracao tecidual com Peptideos e Exossomos",
+      "Prescricoes Biomedicas",
     ],
   },
   {
     titulo: "Modelagem e Contorno",
     itens: [
-      "Rinomodelação",
+      "Rinomodelacao",
       "Preenchimento labial",
-      "Contorno de mandíbula e mento",
-      "Correção de olheiras",
-      "Bigode chinês",
-      "Preenchimento de malar e têmporas",
+      "Contorno de mandibula e mento",
+      "Correcao de olheiras",
     ],
   },
 ];
