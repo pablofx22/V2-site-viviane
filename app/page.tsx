@@ -7,7 +7,7 @@ import Avaliacoes from "@/components/sections/Avaliacoes";
 import FAQ from "@/components/sections/FAQ";
 import Contato from "@/components/sections/Contato";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
+import WhatsAppFloat from "@/components/ui/whatsAppFloat";
 
 export default function Home() {
   return (
