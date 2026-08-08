@@ -32,7 +32,7 @@ export default function FAQ() {
             </h2>
             <p style={{ color: "rgba(250,248,245,0.45)", marginBottom: "var(--s6)" }}>
               Respondemos as perguntas mais comuns para que você chegue à
-              sua avaliação com segurança e confiança.
+              sua consulta com segurança e confiança.
             </p>
             <Button href={whatsappLink} variant="outline" target="_blank" rel="noopener noreferrer">
               Tirar dúvida pelo WhatsApp
