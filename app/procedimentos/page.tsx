@@ -1,6 +1,6 @@
 ﻿import { Metadata } from "next";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
+import WhatsAppFloat from "@/components/ui/whatsAppFloat";
 import ProcedimentosHero from "@/components/procedimentos/ProcedimentosHero";
 import ProcedimentosPortfolioGrid from "@/components/procedimentos/ProcedimentosPortfolioGrid";
 
