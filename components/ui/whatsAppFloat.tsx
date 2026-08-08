@@ -1,4 +1,3 @@
-
 const WHATSAPP_NUMBER = "5551999765243";
 const DEFAULT_MESSAGE =
   "Olá, Dra. Viviane! Vim pelo site e gostaria de agendar uma avaliação.";
