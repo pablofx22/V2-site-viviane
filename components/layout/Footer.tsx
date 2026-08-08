@@ -61,7 +61,7 @@ export default function Footer() {
               <li><Link href="/#sobre">Sobre</Link></li>
               <li><Link href="/#procedimentos">Procedimentos</Link></li>
               <li><Link href="/#autoridade">Workshops</Link></li>
-              <li><Link href="/#avaliacoes">Avaliações</Link></li>
+              <li><Link href="/#avaliacoes">Consultas</Link></li>
               <li><Link href="/#faq">Dúvidas</Link></li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                   @clinicavivianeseguro
                 </a>
               </li>
-              <li><Link href="/#contato">Agendar avaliação</Link></li>
+              <li><Link href="/#contato">Agendar Consulta</Link></li>
               <li className="footer-address">Porto Alegre e Região — RS</li>
             </ul>
           </div>
