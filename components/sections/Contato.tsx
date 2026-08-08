@@ -20,7 +20,7 @@ export default function Contato() {
             </h2>
 
             <p className="t-body contato-body">
-              Agende sua avaliação e descubra o tratamento ideal para o seu
+              Agende sua consulta e descubra o tratamento ideal para o seu
               objetivo. O primeiro passo é uma conversa, sem compromisso, sem
               pressão.
             </p>
