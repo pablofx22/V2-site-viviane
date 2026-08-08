@@ -65,7 +65,7 @@ export default function ContactForm() {
 
   return (
     <div className="contato-form">
-      <h3 className="form-title">Solicitar avaliação</h3>
+      <h3 className="form-title">Solicitar Consulta</h3>
       <p className="form-subtitle">
         Preencha os dados abaixo e entraremos em contato em até 24h.
       </p>
@@ -145,7 +145,7 @@ export default function ContactForm() {
           className="btn btn-primary form-submit"
           disabled={enviando}
         >
-          {enviando ? "Enviando..." : "Solicitar avaliação"}
+          {enviando ? "Enviando..." : "Solicitar Consulta"}
         </button>
 
         <p className="form-privacy">
