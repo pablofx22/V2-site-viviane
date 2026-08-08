@@ -50,7 +50,7 @@ export default function Autoridade() {
               ))}
             </div>
 
-            <Button href="#contato" variant="primary">
+            <Button href="/#contato" variant="primary">
               Agendar consulta
             </Button>
           </div>
@@ -75,25 +75,25 @@ export default function Autoridade() {
                       sizes="(max-width: 900px) 100vw, 50vw"
                     />
                   ) : (
-                  <div className="workshop-notice">
-                    <svg
-                      width={workshop.destaque ? 28 : 24}
-                      height={workshop.destaque ? 28 : 24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#C9A96E"
-                      strokeWidth="1.2"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="M21 15l-5-5L5 21" />
-                    </svg>
-                    <p style={{ fontSize: workshop.destaque ? undefined : "0.65rem" }}>
-                      {workshop.destaque
-                        ? "Fotos dos workshops serão inseridas aqui"
-                        : workshop.id.replace("workshop-", "Workshop ")}
-                    </p>
-                  </div>
+                    <div className="workshop-notice">
+                      <svg
+                        width={workshop.destaque ? 28 : 24}
+                        height={workshop.destaque ? 28 : 24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#C9A96E"
+                        strokeWidth="1.2"
+                      >
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <circle cx="8.5" cy="8.5" r="1.5" />
+                        <path d="M21 15l-5-5L5 21" />
+                      </svg>
+                      <p className="workshop-notice-text">
+                        {workshop.destaque
+                          ? "Fotos dos workshops serão inseridas aqui"
+                          : workshop.id.replace("workshop-", "Workshop ")}
+                      </p>
+                    </div>
                   )}
                 </div>
               ))}

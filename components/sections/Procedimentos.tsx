@@ -23,14 +23,12 @@ export default function Procedimentos() {
           {procedimentosAncora.map((proc) => (
             <div key={proc.titulo} className="proc-anchor-card fade-up">
               <div className="proc-card-photo">
-                <img
+                <Image
                   src={proc.imagem}
                   alt={proc.imagemAlt}
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "100%",
-                  }}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <span className="proc-card-number">{proc.numero}</span>
               </div>

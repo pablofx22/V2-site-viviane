@@ -29,8 +29,8 @@ export default function MobileMenu({ links, open, onClose }: MobileMenuProps) {
         ))}
       </div>
 
-      <Button href="#contato" variant="primary" className="mobile-cta" onClick={onClose}>
-        Agendar avaliação
+      <Button href="/#contato" variant="primary" className="mobile-cta" onClick={onClose}>
+        Agendar Consulta
       </Button>
     </nav>
   );

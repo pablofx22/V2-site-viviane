@@ -37,14 +37,25 @@ export default function Avaliacoes() {
         </div>
 
         <div className="avaliacoes-cta fade-up">
-          
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="avaliacoes-google-link">
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-    <circle cx="12" cy="10" r="3" />
-  </svg>
-  Ver todas as avaliacoes no Google
-</a>
+          <a
+            href="https://search.google.com/local/reviews?placeid=CHANGE_ME"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="avaliacoes-google-link"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Ver todas as avaliações no Google
+          </a>
         </div>
       </div>
     </section>

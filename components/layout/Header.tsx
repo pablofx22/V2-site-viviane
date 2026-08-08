@@ -29,8 +29,8 @@ export default function Header() {
               <Image
                 src="/images/logo/logo-mini.png"
                 alt="Logo Dra. Viviane Seguro"
-                width={58}
-                height={58}
+                width={54}
+                height={54}
                 className="header-logo-img"
                 priority
               />

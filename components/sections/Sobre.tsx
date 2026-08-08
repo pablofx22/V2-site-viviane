@@ -8,25 +8,13 @@ export default function Sobre() {
         <div className="sobre-grid">
           <div className="sobre-photo fade-up">
             <div className="sobre-photo-frame">
-              
-                <Image
-                  src="/images/sobre/dra-viviane-sobre.jpeg"
-                  alt="Dra. Viviane Seguro em seu consultório"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              
-              <div className="sobre-photo-placeholder">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" strokeWidth="1">
-                  <circle cx="12" cy="8" r="5" />
-                  <path d="M3 21c0-5 4-9 9-9s9 4 9 9" />
-                </svg>
-                <p style={{ fontSize: "0.7rem", color: "var(--text-muted)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                  Foto editorial
-                </p>
-                <p style={{ fontSize: "0.65rem", color: "var(--text-muted)", opacity: 0.6 }}>
-                </p>
-              </div>
+              <Image
+                src="/images/sobre/dra-viviane-sobre.jpeg"
+                alt="Dra. Viviane Seguro em seu consultório"
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             <div className="sobre-photo-accent">
               <div className="sobre-photo-accent-number">
@@ -51,7 +39,7 @@ export default function Sobre() {
 
             <p className="t-body sobre-body">
               Viviane Seguro é Biomédica Esteta com registro CRBM 5 6680 e
-              formação especializada e pós-graduação em biomedicina estética e cosmotologia avançada. Atende em Porto Alegre com
+              formação especializada e pós-graduação em biomedicina estética e cosmetologia avançada. Atende em Porto Alegre com
               foco em resultados naturais, seguros e duradouros.
             </p>
 

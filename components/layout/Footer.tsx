@@ -1,6 +1,5 @@
-const WHATSAPP_NUMBER = "5551999765243";
-const INSTAGRAM_URL = "https://www.instagram.com/clinicavivianeseguro";
-const FACEBOOK_URL = "https://www.facebook.com/share/1HMeouh55i/";
+import Link from "next/link";
+import { WHATSAPP_NUMBER, INSTAGRAM_URL, FACEBOOK_URL } from "@/lib/constants";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -18,8 +17,7 @@ export default function Footer() {
               de cada paciente.
             </p>
             <div className="footer-social">
-              
-                <a
+              <a
                 href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -32,8 +30,7 @@ export default function Footer() {
                   <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
                 </svg>
               </a>
-              
-                <a
+              <a
                 href={FACEBOOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -44,8 +41,7 @@ export default function Footer() {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                 </svg>
               </a>
-              
-                <a
+              <a
                 href={`https://wa.me/${WHATSAPP_NUMBER}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,12 +58,11 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Navegação</h4>
             <ul className="footer-links">
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#procedimentos">Procedimentos</a></li>
-              <li><a href="#resultados">Resultados</a></li>
-              <li><a href="#autoridade">Workshops</a></li>
-              <li><a href="#avaliacoes">Avaliações</a></li>
-              <li><a href="#faq">Dúvidas</a></li>
+              <li><Link href="/#sobre">Sobre</Link></li>
+              <li><Link href="/#procedimentos">Procedimentos</Link></li>
+              <li><Link href="/#autoridade">Workshops</Link></li>
+              <li><Link href="/#avaliacoes">Avaliações</Link></li>
+              <li><Link href="/#faq">Dúvidas</Link></li>
             </ul>
           </div>
 
@@ -84,10 +79,8 @@ export default function Footer() {
                   @clinicavivianeseguro
                 </a>
               </li>
-              <li><a href="#contato">Agendar avaliação</a></li>
-              <li style={{ marginTop: 8, color: "rgba(250,248,245,0.2)", fontSize: "0.75rem" }}>
-                Porto Alegre e Região — RS
-              </li>
+              <li><Link href="/#contato">Agendar avaliação</Link></li>
+              <li className="footer-address">Porto Alegre e Região — RS</li>
             </ul>
           </div>
         </div>

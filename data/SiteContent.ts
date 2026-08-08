@@ -13,8 +13,8 @@ export const estatisticasAutoridade: EstatisticaAutoridade[] = [
 
 export interface WorkshopFoto {
   id: string;
-  destaque?: boolean; // true = ocupa a linha toda (primeira posição)
-  imagem?: string; // ex: "/images/workshops/workshop-1.jpg"
+  destaque?: boolean;
+  imagem?: string;
   legenda?: string;
 }
 
@@ -42,19 +42,19 @@ export const contatoInfo = {
   instagram: "https://www.instagram.com/clinicavivianeseguro",
   instagramHandle: "@clinicavivianeseguro",
   facebook: "https://www.facebook.com/share/1HMeouh55i/",
-  localizacao: "Porto Alegre e Regiao, Rio Grande do Sul",
+  localizacao: "Porto Alegre e Região, Rio Grande do Sul",
   telefoneFormatado: "+55 (51) 99976-5243",
 };
 
 export const procedimentosOpcoes: string[] = [
-  "Toxina Botulinica",
-  "Preenchimento Facial com Acido Hialuronico",
-  "Bioestimuladores de Colageno",
-  "Rinomodelacao",
+  "Toxina Botulínica",
+  "Preenchimento Facial com Ácido Hialurônico",
+  "Bioestimuladores de Colágeno",
+  "Rinomodelação",
   "SkinBoosters",
   "Luz Intensa Pulsada (IPL)",
-  "Peelings Quimicos",
+  "Peelings Químicos",
   "Microagulhamento",
   "Consultoria de Skincare",
-  "Nao sei ainda, quero uma avaliacao",
+  "Não sei ainda, quero uma avaliação",
 ];

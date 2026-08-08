@@ -2,9 +2,7 @@
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import ProcedimentosHero from "@/components/procedimentos/ProcedimentosHero";
-import ProcedimentosGrid from "@/components/procedimentos/ProcedimentosGrid";
 import ProcedimentosPortfolioGrid from "@/components/procedimentos/ProcedimentosPortfolioGrid";
-import { procedimentosAncora } from "@/data/procedimentos";
 
 export const metadata: Metadata = {
   title: "Procedimentos Estéticos | Dra. Viviane Seguro - Biomédica Esteta",
@@ -27,7 +25,7 @@ export default function ProcedimentosPage() {
       <main>
         <ProcedimentosHero />
 
-        {/* Seção de portfólio completo (nova) */}
+        {/* Seção de portfólio completo */}
         <section className="pfg-section">
           <div className="container">
             <div className="pfg-section-header">
@@ -69,9 +67,6 @@ export default function ProcedimentosPage() {
                 className="btn btn-primary"
               >
                 Agendar Consulta
-              </a>
-              <a href="#procedimentos-grid" className="btn btn-outline">
-                Ver procedimentos
               </a>
             </div>
           </div>

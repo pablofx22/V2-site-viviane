@@ -42,15 +42,14 @@ export default function ContactForm() {
       <div className="contato-form">
         <div className="form-success" style={{ display: "block" }}>
           <div className="form-success-icon">✦</div>
-          <h3>Solicitacao enviada!</h3>
+          <h3>Solicitação enviada!</h3>
           <p>
-            A Dra. Viviane entrara em contato em ate 24h para confirmar seu
+            A Dra. Viviane entrará em contato em até 24h para confirmar seu
             agendamento.
           </p>
           <p style={{ marginTop: 12, fontSize: "0.8rem", color: "var(--text-muted)" }}>
             Ou se preferir, fale agora pelo{" "}
-            
-              <a
+            <a
               href={`https://wa.me/${contatoInfo.whatsapp}`}
               style={{ color: "var(--gold-dark)", fontWeight: 500 }}
               target="_blank"
@@ -58,7 +57,6 @@ export default function ContactForm() {
             >
               WhatsApp
             </a>
-            
           </p>
         </div>
       </div>
@@ -67,9 +65,9 @@ export default function ContactForm() {
 
   return (
     <div className="contato-form">
-      <h3 className="form-title">Solicitar avaliacao</h3>
+      <h3 className="form-title">Solicitar avaliação</h3>
       <p className="form-subtitle">
-        Preencha os dados abaixo e entraremos em contato em ate 24h.
+        Preencha os dados abaixo e entraremos em contato em até 24h.
       </p>
 
       <form onSubmit={handleSubmit}>
@@ -107,7 +105,7 @@ export default function ContactForm() {
           </div>
           <div className="form-group">
             <label className="form-label" htmlFor="horario">
-              Preferencia de horario
+              Preferência de horário
             </label>
             <select
               className="form-select"
@@ -117,9 +115,9 @@ export default function ContactForm() {
               onChange={(e) => setHorario(e.target.value)}
             >
               <option value="">Selecione</option>
-              <option>Manha (8h - 12h)</option>
+              <option>Manhã (8h - 12h)</option>
               <option>Tarde (13h - 18h)</option>
-              <option>Qualquer horario</option>
+              <option>Qualquer horário</option>
             </select>
           </div>
         </div>
@@ -142,11 +140,17 @@ export default function ContactForm() {
           </select>
         </div>
 
-        <button type="submit" className="btn btn-primary form-submit" disabled={enviando}>
-          {enviando ? "Enviando..." : "Solicitar avaliacao"}
+        <button
+          type="submit"
+          className="btn btn-primary form-submit"
+          disabled={enviando}
+        >
+          {enviando ? "Enviando..." : "Solicitar avaliação"}
         </button>
 
-        <p className="form-privacy">Seus dados sao confidenciais e nao serao compartilhados.</p>
+        <p className="form-privacy">
+          Seus dados são confidenciais e não serão compartilhados.
+        </p>
       </form>
     </div>
   );

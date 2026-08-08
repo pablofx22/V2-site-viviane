@@ -12,32 +12,32 @@ export const procedimentosAncora: ProcedimentoAncora[] = [
   {
     numero: "01 - DESTAQUE",
     label: "Mais Solicitado",
-    titulo: "Toxina Botulinica",
+    titulo: "Toxina Botulínica",
     descricao:
-      "Expressao natural, resultado preciso. Suaviza linhas de expressao com tecnica que preserva movimento e autenticidade.",
+      "Expressão natural, resultado preciso. Suaviza linhas de expressão com técnica que preserva movimento e autenticidade.",
     icone: "botox",
     imagem: "/images/procedimentos/toxina-botulinica.jpeg",
-    imagemAlt: "Aplicacao de toxina botulinica pela Dra. Viviane Seguro",
+    imagemAlt: "Aplicação de toxina botulínica pela Dra. Viviane Seguro",
   },
   {
     numero: "02 - DESTAQUE",
     label: "Alto Impacto",
-    titulo: "Preenchimento Facial com Acido Hialuronico",
+    titulo: "Preenchimento Facial com Ácido Hialurônico",
     descricao:
-      "Contornos que realcam, nao que alteram. Reestruturacao completa de face - malar, mento, mandibula, labios e mais.",
+      "Contornos que realçam, não que alteram. Reestruturação completa de face - malar, mento, mandíbula, lábios e mais.",
     icone: "preenchimento",
     imagem: "/images/procedimentos/preenchimento-facial.jpeg",
-    imagemAlt: "Procedimento de preenchimento facial com acido hialuronico",
+    imagemAlt: "Procedimento de preenchimento facial com ácido hialurônico",
   },
   {
     numero: "03 - DESTAQUE",
     label: "Resultado Progressivo",
-    titulo: "Bioestimuladores de Colageno",
+    titulo: "Bioestimuladores de Colágeno",
     descricao:
-      "Rejuvenescimento que melhora com o tempo. Sculptra e Radiesse estimulam a producao natural de colageno com resultado duradouro.",
+      "Rejuvenescimento que melhora com o tempo. Sculptra e Radiesse estimulam a produção natural de colágeno com resultado duradouro.",
     icone: "bioestimulador",
     imagem: "/images/procedimentos/bioestimuladores.jpeg",
-    imagemAlt: "Bioestimulador de colageno Sculptra aplicado pela Dra. Viviane",
+    imagemAlt: "Bioestimulador de colágeno Sculptra aplicado pela Dra. Viviane",
   },
 ];
 
@@ -48,32 +48,32 @@ export interface PortfolioCategoria {
 
 export const portfolioCategorias: PortfolioCategoria[] = [
   {
-    titulo: "Renovacao da Pele",
+    titulo: "Renovação da Pele",
     itens: [
       "Limpeza de pele profissional",
-      "Peelings quimicos (glicólico, salicílico, TCA e mais)",
-      "Peeling fisico de Diamante",
+      "Peelings químicos (glicólico, salicílico, TCA e mais)",
+      "Peeling físico de Diamante",
       "Microagulhamento com Drug Delivery",
       "LEDterapia",
       "Consultoria de Skincare",
     ],
   },
   {
-    titulo: "Tecnologia e Inovacao",
+    titulo: "Tecnologia e Inovação",
     itens: [
       "Luz Intensa Pulsada (IPL)",
       "SkinBoosters",
-      "Regeneracao tecidual com Peptideos e Exossomos",
-      "Prescricoes Biomedicas",
+      "Regeneração tecidual com Peptídeos e Exossomos",
+      "Prescrições Biomédicas",
     ],
   },
   {
     titulo: "Modelagem e Contorno",
     itens: [
-      "Rinomodelacao",
+      "Rinomodelação",
       "Preenchimento labial",
-      "Contorno de mandibula e mento",
-      "Correcao de olheiras",
+      "Contorno de mandíbula e mento",
+      "Correção de olheiras",
     ],
   },
 ];

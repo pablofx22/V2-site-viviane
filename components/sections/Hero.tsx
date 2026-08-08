@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 
+
 const WHATSAPP_NUMBER = "5551999765243";
 const HERO_MESSAGE =
   "Olá, Dra. Viviane! Vim pelo site e gostaria de agendar uma avaliação.";
@@ -27,15 +28,18 @@ export default function Hero() {
       <div className="container">
         <div className="hero-content">
           <div className="section-label" style={{ marginBottom: "var(--s6)" }}>
-            <span className="t-label hero-tagline">
-            
-          </span>
+            <span className="t-label hero-tagline"></span>
           </div>
 
           <h1 className="t-display hero-headline">
-            <span className="hero-line">Beleza</span>
-            <span className="hero-line">que transforma.</span>
-            <span className="hero-line"><em>Cuidado</em> que acolhe.</span>
+            <span className="hero-line">Beleza que</span>
+            <span className="hero-line">
+              <em>transforma.</em>
+            </span>
+            <span className="hero-line">Cuidado que</span>
+            <span className="hero-line">
+              <em>acolhe.</em>
+            </span>
           </h1>
 
           <p className="t-body-lg hero-subtitle">
@@ -43,21 +47,6 @@ export default function Hero() {
             Biomédica Esteta com formação técnica avançada e atenção
             personalizada a cada paciente.
           </p>
-
-          <div className="hero-info-block">
-            <div className="hero-address">
-              <p>Rua Dr. Florêncio Ygartua, 391 - Sl 302 - Moinhos de Vento, Porto Alegre - RS</p>
-            </div>
-
-            <div className="hero-social-proof">
-              <div className="hero-stars">
-                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-              </div>
-              <p className="hero-proof-text">
-                <strong>5.0</strong> no Google · Avaliações verificadas de pacientes reais
-              </p>
-            </div>
-          </div>
 
           <div className="hero-actions">
             <Button href={whatsappLink} variant="primary" target="_blank" rel="noopener noreferrer">
@@ -68,11 +57,19 @@ export default function Hero() {
               </div>
               Agendar minha consulta
             </Button>
-            <Button href="#procedimentos" variant="ghost-light">
+            <Button href="/#procedimentos" variant="ghost-light">
               Ver procedimentos
             </Button>
           </div>
 
+          <div className="hero-social-proof">
+            <div className="hero-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p className="hero-proof-text">
+              <strong>5.0</strong> no Google · Avaliações verificadas de pacientes reais
+            </p>
+          </div>
         </div>
       </div>
 
